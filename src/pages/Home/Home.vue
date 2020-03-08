@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Header />
     <TopNav />
   </div>
@@ -17,4 +17,8 @@ export default {
 }
 </script>
 
-<style lang='stylus' scoped></style>
+<style lang='stylus' scoped>
+.home
+  padding-bottom 75px
+  background-color rgb(238,238,238)
+</style>
