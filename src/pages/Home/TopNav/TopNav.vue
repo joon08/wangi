@@ -25,6 +25,8 @@
           <CategoryHotSell />
           <FlashSale />
           <NewItem />
+          <SceneLight />
+          <Footer />
         </div>
       </van-tab>
     </van-tabs>
@@ -41,6 +43,8 @@ import IndexActivity from './IndexActivity/IndexActivity'
 import CategoryHotSell from './CategoryHotSell/CategoryHotSell'
 import FlashSale from './FlashSale/FlashSale'
 import NewItem from './NewItem/NewItem'
+import SceneLight from './SceneLight/SceneLight'
+import Footer from './Footer/Footer'
 export default {
   name: 'TopNav',
   data () {
@@ -56,7 +60,9 @@ export default {
     IndexActivity,
     CategoryHotSell,
     FlashSale,
-    NewItem
+    NewItem,
+    SceneLight,
+    Footer
   },
   mounted () {
     this.navDatas = this.navDatas.concat(navDatas)

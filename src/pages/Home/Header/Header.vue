@@ -22,6 +22,7 @@ export default {
   display flex
   align-items center
   padding 10px 0
+  background-color #fff
   .logo
     font-size 18px
     margin 0 10px

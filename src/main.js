@@ -13,7 +13,9 @@ import {
   Tabs,
   Icon,
   Swipe,
-  SwipeItem
+  SwipeItem,
+  Sidebar,
+  SidebarItem
 } from 'vant'
 Vue.use(Tabbar)
 Vue.use(TabbarItem)
@@ -23,6 +25,8 @@ Vue.use(Tabs)
 Vue.use(Icon)
 Vue.use(Swipe)
 Vue.use(SwipeItem)
+Vue.use(Sidebar)
+Vue.use(SidebarItem)
 
 Vue.config.productionTip = false // 控制台提示信息不显示
 

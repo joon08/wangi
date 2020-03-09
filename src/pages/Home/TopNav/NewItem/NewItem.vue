@@ -38,6 +38,7 @@ export default {
   margin-top 10px
   background-color #fff
   padding-left 15px
+  padding-bottom 15px
   .title
     padding 15px 15px 15px 0
     span
