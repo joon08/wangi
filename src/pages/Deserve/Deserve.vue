@@ -35,7 +35,9 @@
           </van-swipe>
         </div>
       </div>
-      <div class="content_list"></div>
+      <div class="content_list">
+        
+      </div>
     </div>
   </div>
 </template>
@@ -46,7 +48,7 @@ export default {
   name: 'Deserve',
   data () {
     return {
-      datas: []
+      datas: [],
     }
   },
   mounted () {
@@ -68,6 +70,7 @@ export default {
     align-items center
     border-bottom 1px solid #000
     padding 0 15px
+    background-color #fff
     span
       width 80%
       text-align center
@@ -77,6 +80,8 @@ export default {
       margin-right 10px
   .content
     width 100%
+    .content_list
+      height 100%
     .content_swiper
       width 100%
       height 340px

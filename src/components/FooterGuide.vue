@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="isShow">
     <van-tabbar v-model="active">
       <van-tabbar-item icon="wap-home-o" @click="goto('/home')">首页</van-tabbar-item>
       <van-tabbar-item icon="apps-o" @click="goto('/category')">分类</van-tabbar-item>
@@ -21,6 +21,11 @@ export default {
   methods: {
     goto(path){
       this.$router.replace(path)
+    }
+  },
+  computed: {
+    isShow(){
+      return this.$route.meta.isShowFooter
     }
   }
 }

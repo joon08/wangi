@@ -4,6 +4,7 @@ import Deserve from '../pages/Deserve/Deserve.vue'
 import Personal from '../pages/Personal/Personal.vue'
 import ShoppingCard from '../pages/ShoppingCard/ShoppingCard.vue'
 import CategoryItem from '../pages/Category/CategoryItem/CategoryItem.vue'
+import Login from '../pages/Login/Login.vue'
 
 const routes = [
   {
@@ -14,16 +15,23 @@ const routes = [
     }
   },
   {
+    path: '/login',
+    component: Login
+  },
+  {
     path: '/category',
     component: Category,
     children: [
       {
         path: '/category/:id',
-        component: CategoryItem
+        component: CategoryItem,
+        meta: {
+          isShowFooter: true
+        }
       },
       {
         path: '/category',
-        redirect:'/category/11'
+        redirect: '/category/11'
       }
     ],
     meta: {

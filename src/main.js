@@ -4,6 +4,8 @@ import router from './router' // 引进路由器
 
 import './utils/rem' // 移动端适配
 import './utils/reset.css' // 样式重置
+// import waterfall from 'vue-waterfall2'
+// Vue.use(waterfall)
 
 import {
   Tabbar,

@@ -4,7 +4,12 @@
 
 <script>
 export default {
-  name: 'Personal'
+  name: 'Personal',
+  mounted () {
+    if(!this.user){
+      this.$router.replace('/login')
+    }
+  }
 }
 </script>
 
